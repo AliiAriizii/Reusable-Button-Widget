@@ -14,15 +14,15 @@ class MyApp extends StatelessWidget {
       title: 'AppButton Demo',
       home: const HomeScreen(),
       debugShowCheckedModeBanner: false,
-      theme : ThemeData(
-      primaryColor: Colors.green,
-      scaffoldBackgroundColor: Colors.white,
-      elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.green,
-        foregroundColor: Colors.white,
-          ),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.teal,
+          primary: Colors.teal,       // رنگ دکمه‌ها و AppBar
+          onPrimary: Colors.white,    // رنگ نوشته روی دکمه
+          background: Colors.white,   // رنگ پس‌زمینه
         ),
+        scaffoldBackgroundColor: Colors.white,
       ),
     );
   }
