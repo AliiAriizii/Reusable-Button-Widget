@@ -1,16 +1,37 @@
-# task
+: ساخت ویجت دکمه قابل استفاده مجدد (Reusable Button Widget)
+📌 شرح:
+در این تسک، شما باید یک ویجت دکمه سفارشی به نام AppButton طراحی کنید که در تمام پروژه قابل استفاده باشه.
 
-A new Flutter project.
+🔧 نیازمندی‌ها:
+پارامترهای ورودی:
 
-## Getting Started
+label (متن دکمه)
 
-This project is a starting point for a Flutter application.
+backgroundColor, textColor
 
-A few resources to get you started if this is your first Flutter project:
+onPressed (فانکشن اجراشونده)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+isLoading (برای نمایش اسپینر)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+isEnabled (برای غیرفعال کردن دکمه)
+
+طراحی:
+
+گوشه‌های گرد (BorderRadius.circular)
+
+سایه ملایم (BoxShadow)
+
+زمانی که isLoading برابر true باشد، متن دکمه با یک CircularProgressIndicator جایگزین شود.
+
+Bonus:
+
+پشتیبانی از آیکون اختیاری (icon)
+
+✅ چیزی که تست می‌کند:
+ساخت ویجت‌های سفارشی
+
+استفاده از پارامترهای اختیاری و شرطی در ساخت UI
+
+کدنویسی تمیز و قابل استفاده مجدد
+
+درک عمیق از طراحی و تم‌بندی در Flutter
